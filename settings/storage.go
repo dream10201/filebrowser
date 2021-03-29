@@ -1,9 +1,9 @@
 package settings
 
 import (
-	"github.com/filebrowser/filebrowser/v2/errors"
-	"github.com/filebrowser/filebrowser/v2/rules"
-	"github.com/filebrowser/filebrowser/v2/users"
+	"github.com/dream10201/filecloud/v2/errors"
+	"github.com/dream10201/filecloud/v2/rules"
+	"github.com/dream10201/filecloud/v2/users"
 )
 
 // StorageBackend is a settings storage backend.

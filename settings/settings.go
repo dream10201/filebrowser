@@ -4,7 +4,7 @@ import (
 	"crypto/rand"
 	"strings"
 
-	"github.com/filebrowser/filebrowser/v2/rules"
+	"github.com/dream10201/filecloud/v2/rules"
 )
 
 // AuthMethod describes an authentication method.

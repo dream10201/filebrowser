@@ -21,14 +21,14 @@ import (
 	v "github.com/spf13/viper"
 	lumberjack "gopkg.in/natefinch/lumberjack.v2"
 
-	"github.com/filebrowser/filebrowser/v2/auth"
-	"github.com/filebrowser/filebrowser/v2/diskcache"
-	"github.com/filebrowser/filebrowser/v2/frontend"
-	fbhttp "github.com/filebrowser/filebrowser/v2/http"
-	"github.com/filebrowser/filebrowser/v2/img"
-	"github.com/filebrowser/filebrowser/v2/settings"
-	"github.com/filebrowser/filebrowser/v2/storage"
-	"github.com/filebrowser/filebrowser/v2/users"
+	"github.com/dream10201/filecloud/v2/auth"
+	"github.com/dream10201/filecloud/v2/diskcache"
+	"github.com/dream10201/filecloud/v2/frontend"
+	fbhttp "github.com/dream10201/filecloud/v2/http"
+	"github.com/dream10201/filecloud/v2/img"
+	"github.com/dream10201/filecloud/v2/settings"
+	"github.com/dream10201/filecloud/v2/storage"
+	"github.com/dream10201/filecloud/v2/users"
 )
 
 var (
@@ -39,13 +39,13 @@ func init() {
 	cobra.OnInitialize(initConfig)
 	cobra.MousetrapHelpText = ""
 
-	rootCmd.SetVersionTemplate("File Browser version {{printf \"%s\" .Version}}\n")
+	rootCmd.SetVersionTemplate("File Cloud version {{printf \"%s\" .Version}}\n")
 
 	flags := rootCmd.Flags()
 	persistent := rootCmd.PersistentFlags()
 
 	persistent.StringVarP(&cfgFile, "config", "c", "", "config file path")
-	persistent.StringP("database", "d", "./filebrowser.db", "database path")
+	persistent.StringP("database", "d", "./filecloud.db", "database path")
 	flags.Bool("noauth", false, "use the noauth auther when using quick setup")
 	flags.String("username", "admin", "username for the first user when using quick config")
 	flags.String("password", "", "hashed password for the first user when using quick config (default \"admin\")")
@@ -72,13 +72,13 @@ func addServerFlags(flags *pflag.FlagSet) {
 }
 
 var rootCmd = &cobra.Command{
-	Use:   "filebrowser",
-	Short: "A stylish web-based file browser",
-	Long: `File Browser CLI lets you create the database to use with File Browser,
+	Use:   "filecloud",
+	Short: "A stylish web-based File Cloud",
+	Long: `File Cloud CLI lets you create the database to use with File Cloud,
 manage your users and all the configurations without acessing the
 web interface.
 
-If you've never run File Browser, you'll need to have a database for
+If you've never run File Cloud, you'll need to have a database for
 it. Don't worry: you don't need to setup a separate database server.
 We're using Bolt DB which is a single file database and all managed
 by ourselves.
@@ -88,11 +88,11 @@ For this specific command, all the flags you have available (except
 environment variables or configuration files.
 
 If you don't set "config", it will look for a configuration file called
-.filebrowser.{json, toml, yaml, yml} in the following directories:
+.filecloud.{json, toml, yaml, yml} in the following directories:
 
 - ./
 - $HOME/
-- /etc/filebrowser/
+- /etc/filecloud/
 
 The precedence of the configuration values are as follows:
 
@@ -106,7 +106,7 @@ The environment variables are prefixed by "FB_" followed by the option
 name in caps. So to set "database" via an env variable, you should
 set FB_DATABASE.
 
-Also, if the database path doesn't exist, File Browser will enter into
+Also, if the database path doesn't exist, File Cloud will enter into
 the quick setup mode and a new database will be bootstraped and a new
 user created with the credentials from options "username" and "password".`,
 	Run: python(func(cmd *cobra.Command, args []string, d pythonData) {
@@ -389,8 +389,8 @@ func initConfig() {
 		checkErr(err)
 		v.AddConfigPath(".")
 		v.AddConfigPath(home)
-		v.AddConfigPath("/etc/filebrowser/")
-		v.SetConfigName(".filebrowser")
+		v.AddConfigPath("/etc/filecloud/")
+		v.SetConfigName(".filecloud")
 	} else {
 		v.SetConfigFile(cfgFile)
 	}

@@ -1,8 +1,8 @@
 package auth
 
 import (
-	"github.com/filebrowser/filebrowser/v2/settings"
-	"github.com/filebrowser/filebrowser/v2/users"
+	"github.com/dream10201/filecloud/v2/settings"
+	"github.com/dream10201/filecloud/v2/users"
 )
 
 // StorageBackend is a storage backend for auth storage.

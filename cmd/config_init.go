@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/filebrowser/filebrowser/v2/settings"
+	"github.com/dream10201/filecloud/v2/settings"
 )
 
 func init() {
@@ -16,9 +16,9 @@ func init() {
 var configInitCmd = &cobra.Command{
 	Use:   "init",
 	Short: "Initialize a new database",
-	Long: `Initialize a new database to use with File Browser. All of
+	Long: `Initialize a new database to use with File Cloud. All of
 this options can be changed in the future with the command
-'filebrowser config set'. The user related flags apply
+'filecloud config set'. The user related flags apply
 to the defaults when creating new users and you don't
 override the options.`,
 	Args: cobra.NoArgs,
@@ -61,7 +61,7 @@ override the options.`,
 
 		fmt.Printf(`
 Congratulations! You've set up your database to use with File Browser.
-Now add your first user via 'filebrowser users add' and then you just
+Now add your first user via 'filecloud users add' and then you just
 need to call the main command to boot up the server.
 `)
 		printSettings(ser, s, auther)

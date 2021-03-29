@@ -9,7 +9,7 @@
     <script src="[{[ .ReCaptchaHost ]}]/recaptcha/api.js?render=explicit"></script>
   [{[ end ]}]
 
-  <title>[{[ if .Name -]}][{[ .Name ]}][{[ else ]}]File Browser[{[ end ]}]</title>
+  <title>[{[ if .Name -]}][{[ .Name ]}][{[ else ]}]File Cloud[{[ end ]}]</title>
 
   <link rel="icon" type="image/png" sizes="32x32" href="[{[ .StaticURL ]}]/img/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="[{[ .StaticURL ]}]/img/icons/favicon-16x16.png">
@@ -30,12 +30,12 @@
 
   <!-- Inject Some Variables and generate the manifest json -->
   <script>
-    window.FileBrowser = JSON.parse(`[{[ .Json ]}]`);
-
-    var fullStaticURL = window.location.origin + window.FileBrowser.StaticURL;
+    window.FileCloud = JSON.parse(`[{[ .Json ]}]`);
+    
+    var fullStaticURL = window.location.origin + window.FileCloud.StaticURL;
     var dynamicManifest = {
-      "name": window.FileBrowser.Name || 'File Browser',
-      "short_name": window.FileBrowser.Name || 'File Browser',
+      "name": window.FileCloud.Name || 'File Cloud',
+      "short_name": window.FileCloud.Name || 'File Cloud',
       "icons": [
         {
           "src": fullStaticURL + "/img/icons/android-chrome-192x192.png",
@@ -48,7 +48,7 @@
           "type": "image/png"
         }
       ],
-      "start_url": window.location.origin + window.FileBrowser.BaseURL,
+      "start_url": window.location.origin + window.FileCloud.BaseURL,
       "display": "standalone",
       "background_color": "#ffffff",
       "theme_color": "#455a64"

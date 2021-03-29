@@ -6,9 +6,9 @@ import (
 
 	"github.com/spf13/afero"
 
-	"github.com/filebrowser/filebrowser/v2/errors"
-	"github.com/filebrowser/filebrowser/v2/files"
-	"github.com/filebrowser/filebrowser/v2/rules"
+	"github.com/dream10201/filecloud/v2/errors"
+	"github.com/dream10201/filecloud/v2/files"
+	"github.com/dream10201/filecloud/v2/rules"
 )
 
 // ViewMode describes a view mode.

@@ -3,7 +3,7 @@ package main
 import (
 	"runtime"
 
-	"github.com/filebrowser/filebrowser/v2/cmd"
+	"github.com/dream10201/filecloud/v2/cmd"
 )
 
 func main() {
