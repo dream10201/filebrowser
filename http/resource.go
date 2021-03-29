@@ -14,9 +14,9 @@ import (
 
 	"github.com/spf13/afero"
 
-	"github.com/dream10201/filecloud/v2/errors"
-	"github.com/dream10201/filecloud/v2/files"
-	"github.com/dream10201/filecloud/v2/fileutils"
+	"github.com/dream10201/filebrowser/v2/errors"
+	"github.com/dream10201/filebrowser/v2/files"
+	"github.com/dream10201/filebrowser/v2/fileutils"
 )
 
 var resourceGetHandler = withUser(func(w http.ResponseWriter, r *http.Request, d *data) (int, error) {

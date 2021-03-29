@@ -13,9 +13,9 @@ import (
 	"github.com/mholt/archiver"
 	"github.com/spf13/afero"
 
-	"github.com/dream10201/filecloud/v2/files"
-	"github.com/dream10201/filecloud/v2/fileutils"
-	"github.com/dream10201/filecloud/v2/users"
+	"github.com/dream10201/filebrowser/v2/files"
+	"github.com/dream10201/filebrowser/v2/fileutils"
+	"github.com/dream10201/filebrowser/v2/users"
 )
 
 func slashClean(name string) string {

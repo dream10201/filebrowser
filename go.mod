@@ -1,4 +1,4 @@
-module github.com/dream10201/filecloud/v2
+module github.com/dream10201/filebrowser/v2
 
 go 1.16
 

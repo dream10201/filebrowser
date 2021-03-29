@@ -14,9 +14,9 @@ import (
 	"github.com/spf13/pflag"
 	yaml "gopkg.in/yaml.v2"
 
-	"github.com/dream10201/filecloud/v2/settings"
-	"github.com/dream10201/filecloud/v2/storage"
-	"github.com/dream10201/filecloud/v2/storage/bolt"
+	"github.com/dream10201/filebrowser/v2/settings"
+	"github.com/dream10201/filebrowser/v2/storage"
+	"github.com/dream10201/filebrowser/v2/storage/bolt"
 )
 
 func checkErr(err error) {
