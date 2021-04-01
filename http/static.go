@@ -11,10 +11,10 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/dream10201/filebrowser/v2/auth"
-	"github.com/dream10201/filebrowser/v2/settings"
-	"github.com/dream10201/filebrowser/v2/storage"
-	"github.com/dream10201/filebrowser/v2/version"
+	"github.com/dream10201/filecloud/v2/auth"
+	"github.com/dream10201/filecloud/v2/settings"
+	"github.com/dream10201/filecloud/v2/storage"
+	"github.com/dream10201/filecloud/v2/version"
 )
 
 func handleWithStaticData(w http.ResponseWriter, _ *http.Request, d *data, fSys fs.FS, file, contentType string) (int, error) {

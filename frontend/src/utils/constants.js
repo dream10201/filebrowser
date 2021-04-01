@@ -1,4 +1,4 @@
-const name = window.FileCloud.Name || "File Browser";
+const name = window.FileCloud.Name || "File Cloud";
 const disableExternal = window.FileCloud.DisableExternal;
 const baseURL = window.FileCloud.BaseURL;
 const staticURL = window.FileCloud.StaticURL;

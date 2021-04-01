@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/dream10201/filebrowser/v2/version"
+	"github.com/dream10201/filecloud/v2/version"
 )
 
 func init() {

@@ -3,7 +3,7 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/dream10201/filebrowser/v2/storage/bolt/importer"
+	"github.com/dream10201/filecloud/v2/storage/bolt/importer"
 )
 
 func init() {

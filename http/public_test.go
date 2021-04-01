@@ -10,10 +10,10 @@ import (
 	"github.com/asdine/storm"
 	"github.com/spf13/afero"
 
-	"github.com/dream10201/filebrowser/v2/settings"
-	"github.com/dream10201/filebrowser/v2/share"
-	"github.com/dream10201/filebrowser/v2/storage/bolt"
-	"github.com/dream10201/filebrowser/v2/users"
+	"github.com/dream10201/filecloud/v2/settings"
+	"github.com/dream10201/filecloud/v2/share"
+	"github.com/dream10201/filecloud/v2/storage/bolt"
+	"github.com/dream10201/filecloud/v2/users"
 )
 
 func TestPublicShareHandlerAuthentication(t *testing.T) {
