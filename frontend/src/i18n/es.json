@@ -164,7 +164,7 @@
     "avoidChanges": "(dejar en blanco para evitar cambios)",
     "branding": "Marca",
     "brandingDirectoryPath": "Ruta de la carpeta de personalizacion de marca",
-    "brandingHelp": "Tú puedes personalizar como se ve tu instancia de FileBrowser cambiándole el nombre, reemplazando ellogo, agregar estilos personalizados e incluso deshabilitando loslinks externos que apuntan hacia GitHub. \nPara mayor información acerca de personalización de marca, por favor revisa el {0}.",
+    "brandingHelp": "Tú puedes personalizar como se ve tu instancia de FileCloud cambiándole el nombre, reemplazando ellogo, agregar estilos personalizados e incluso deshabilitando loslinks externos que apuntan hacia GitHub. \nPara mayor información acerca de personalización de marca, por favor revisa el {0}.",
     "changePassword": "Cambiar contraseña",
     "commandRunner": "Executor de comandos",
     "commandRunnerHelp": "Here you can set commands that are executed in the named events. You must write one per line. The environment variables {0} and {1} will be available, being {0} relative to {1}. For more information about this feature and the available environment variables, please read the {2}.",

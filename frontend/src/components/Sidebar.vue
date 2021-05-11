@@ -87,7 +87,7 @@
           v-else
           rel="noopener noreferrer"
           target="_blank"
-          href="https://github.com/filebrowser/filebrowser"
+          href="https://github.com/dream10201/filecloud"
           >File Cloud</a
         >
         <span> {{ version }}</span>
