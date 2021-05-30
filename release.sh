@@ -36,8 +36,8 @@ release () {
 
   checkParam $1
 
-  echo "🧼  Tidying up go modules"
-  go mod tidy
+#  echo "🧼  Tidying up go modules"
+#  go mod tidy
 
   echo "🐑 Creating a new commit for the new release"
   git commit --allow-empty -am "chore: version $semver"
